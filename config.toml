@@ -1,0 +1,75 @@
+baseURL = "/"
+languageCode = "ru-ru"
+title = "Konstantin Shibkov blog"
+theme = "hello-friend"
+useRelativeCover = true
+summaryLength = 42
+
+[params]
+defaultTheme = "light"
+
+[languages]
+  [languages.en]
+    title = "Konstantin Shibkov - blog"
+    subtitle = "sometimes, something"
+    keywords = "java, js, php, linux, manjaro, shibkov, spring"
+    copyright = ""
+    menuMore = "Show more"
+    writtenBy = "Written by"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    minuteReadingTime = "min read"
+    dateFormatSingle = "02.01.2006"
+    dateFormatList = "02.01.2006"
+    # leave empty to disable, enter display text to enable
+    # lastModDisplay = ""
+
+    [languages.en.params.logo]
+      logoText = "konstantin.sh"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+  [languages.ru]
+    title = "Константин Шибков - блог"
+    subtitle = "A simple theme for Hugo"
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    writtenBy = "Written by"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    minuteReadingTime = "min read"
+    dateFormatSingle = "2006-01-02"
+    dateFormatList = "2006-01-02"
+    # leave empty to disable, enter display text to enable
+    # lastModDisplay = ""
+
+    [languages.ru.params.logo]
+      logoText = "hello friend"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+    [languages.ru.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+      [[languages.ru.menu.main]]
+        identifier = "showcase"
+        name = "Showcase"
+        url = "/showcase"

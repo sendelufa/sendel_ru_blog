@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>
+        Установка PHP&#43;PhpUnit в Windows 10 ::
+        Konstantin Shibkov - blog — sometimes, something
+      </title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content="Для запуска тестов используя фреймворк PhpUnit нам нужен сам PHP, если его нет, то установим.
+Если у вас есть PHP в составе OpenServer, WAMP или другой сборки. Пропускайте шаг с установкой
+Установка PHP 7.x Скачивание Переходим на сайт и скачиваем последнюю версию 7."
+/>
+<meta
+  name="keywords"
+  content="java, js, php, linux, manjaro, shibkov, spring"
+/>
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/install-phpunit-windows/" />
+
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css" />
+
+<link rel="stylesheet" href="/style.css" />
+
+
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="144x144"
+  href="/img/apple-touch-icon-144-precomposed.png"
+/>
+<link rel="shortcut icon" href="/img/favicon.png" />
+
+
+<link href="/assets/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Установка PHP&#43;PhpUnit в Windows 10"/>
+<meta name="twitter:description" content="Для запуска тестов используя фреймворк PhpUnit нам нужен сам PHP, если его нет, то установим.
+Если у вас есть PHP в составе OpenServer, WAMP или другой сборки. Пропускайте шаг с установкой
+Установка PHP 7.x Скачивание Переходим на сайт и скачиваем последнюю версию 7."/>
+
+
+
+<meta property="og:title" content="Установка PHP&#43;PhpUnit в Windows 10" />
+<meta property="og:description" content="Для запуска тестов используя фреймворк PhpUnit нам нужен сам PHP, если его нет, то установим.
+Если у вас есть PHP в составе OpenServer, WAMP или другой сборки. Пропускайте шаг с установкой
+Установка PHP 7.x Скачивание Переходим на сайт и скачиваем последнюю версию 7." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/install-phpunit-windows/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-05-18T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-05-18T00:00:00&#43;00:00" /><meta property="og:site_name" content="Konstantin Shibkov - blog" />
+
+
+
+
+
+
+
+  </head>
+  <body class="">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a
+  href="/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >konstantin.sh</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg
+  class="theme-toggler"
+  width="24"
+  height="24"
+  viewBox="0 0 48 48"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"
+  />
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h1 class="post-title">Установка PHP+PhpUnit в Windows 10</h1>
+    <div class="post-meta">
+      
+        <span class="post-date">
+          18.05.2021
+        </span>
+
+        
+          
+        
+      
+
+      
+        <span class="post-author"
+          >— Written by Konstantin Shibkov</span
+        >
+
+
+      
+    </div>
+
+    
+      <span class="post-tags">
+        
+          <a href="/tags/php/">#php</a>&nbsp;
+        
+      </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      <p>Для запуска тестов используя фреймворк PhpUnit нам нужен сам PHP, если его нет, то установим.</p>
+<p>Если у вас есть PHP в составе OpenServer, WAMP или другой сборки. Пропускайте шаг с установкой</p>
+<h2 id="установка-php-7x">Установка PHP 7.x</h2>
+<h3 id="скачивание">Скачивание</h3>
+<p><a href="https://windows.php.net/download">Переходим на сайт и скачиваем последнюю версию 7.x</a></p>
+<p>Нам нужна именно версию ThreadSafe, скачиваем архив zip.</p>
+<p><img src="2021-05-18-11-45-57.png" alt="Выбор дистрибутва PHP"></p>
+<p>Создайте папку, буду использовать <code>C:/php</code>, и в нее распакуйте содержимое архива.</p>
+<p>Можно уже сейчас проверить работу php кода, создайте в любом месте файл <code>test.php</code> с таким содержимым:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+<span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#34;php работает!&#34;</span>;
+<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>Запускаем передавая путь до файла c кодом интерпретатору <code>C:/php/php.exe</code>:
+<img src="2021-05-18-11-58-34.png" alt="Запуск php кода"></p>
+<p>Мы теперь можем запускать PHP код, уже хорошо!</p>
+<h3 id="настройка-path">Настройка PATH</h3>
+<p>Чтобы каждый раз не писать полный путь до испольняемого файла, добавить в переменную PATH путь, и тогда будет использовать только короткую запись <code>php .\test.php</code> для запуска файлов.</p>
+<ul>
+<li>💡 рекомендуется сделать бекап ваших настроек, делается командой:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo $env:path &gt; backup_path.txt
+</code></pre></div><p>если что пойдет не так - сможете восстановить данные из файла.</p>
+<p>Запускайте Powershell (Администратор) и командой добавляем новый путь в PATH для текущего пользователя:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">setx path <span style="color:#e6db74">&#34;</span>$env<span style="color:#e6db74">:path;C:\php&#34;</span>
+</code></pre></div><p><img src="2021-05-18-12-11-57.png" alt="Добавление пути в PATH"></p>
+<p>Закройте Powershell и откройте заново, чтобы новые PATH использовался в новой сессии.
+Проверяем, что путь на месте:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo $env:path
+</code></pre></div><p><img src="2021-05-18-12-20-04.png" alt="Вывод PATH"></p>
+<p>и теперь запускаем скрипт так:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">php test.php
+</code></pre></div><p><img src="2021-05-18-12-22-37.png" alt="Запуск скрипта"></p>
+<p>Успех!</p>
+<h2 id="установка-phpunit">Установка PhpUnit</h2>
+<p>Скачиваем phar архив <a href="https://phar.phpunit.de/phpunit.phar">https://phar.phpunit.de/phpunit.phar</a></p>
+<p>копируйте в папку с php, в нашем случае это <code>C:\php</code> и создайте <code>phpunit.bat</code> в этой же директории:</p>
+<p><img src="2021-05-18-12-29-04.png" alt="Куда положить phar"></p>
+<p>содержимое файла</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">@php <span style="color:#e6db74">&#34;%~dp0phpunit-9.5.4.phar&#34;</span> %*
+</code></pre></div><ul>
+<li>💡 Укажите точное название файла, который скоприровали, чтобы версии совпадали.</li>
+</ul>
+<p>Проверяем:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">phpunit --version
+</code></pre></div><p><img src="2021-05-18-12-33-37.png" alt="версия phpunit"></p>
+<p>Это явный признак успешной установки! 👍</p>
+<h2 id="запуск-тестов">Запуск тестов</h2>
+<p>Для запуска тестов из консоли, выполните команду</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">phpunit <span style="color:#e6db74">&#34;файл_с_тестами&#34;</span>
+</code></pre></div><p>Пример запуска тестов:</p>
+<p><img src="2021-05-18-13-01-10.png" alt="Запуск тестов"></p>
+<p>Судя по скриншоту, тесты испольняются, теперь их предстоить только удовлетворить. А это уже другая история 🙂</p>
+<h2 id="полезные-ссылки">Полезные ссылки</h2>
+<ul>
+<li><a href="https://phpunit.readthedocs.io/en/latest/index.html">PhpUnit Manual</a></li>
+</ul>
+
+    </div>
+    
+
+    
+      
+    
+  </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <a
+  href="/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >konstantin.sh</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span
+          >© 2021 Powered by
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span
+        >
+        <span
+          >Theme created by
+          <a href="https://twitter.com/panr" target="_blank" rel="noopener">panr</a></span
+        >
+      </div>
+    
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+      
+    </div>
+
+    
+  </body>
+</html>
