@@ -3,7 +3,7 @@ title = "Установка PHP+PhpUnit в Windows 10"
 date = "2021-05-18"
 author = "Konstantin Shibkov"
 readingtime = 55
-tags = ["php"]
+tags = ["php", "phpunit", "install"]
 +++
 
 Для запуска тестов используя фреймворк PhpUnit нам нужен сам PHP, если его нет, то установим.

@@ -2,7 +2,8 @@
 title = "Установка git в Windows"
 date = "2021-05-18"
 author = "Konstantin Shibkov"
-tags = ["git"]
+tags = ["git", "install"]
+categories = ["guide", "howto"]
 +++
 
 Всем привет! Сегодня мы будем устанавливать Git в Windows. И любая работа с программой

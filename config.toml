@@ -1,32 +1,43 @@
 baseURL = "/"
-languageCode = "ru-ru"
+languageCode = "ru"
+defaultContentLanguage = "ru"
 title = "Konstantin Shibkov blog"
 theme = "hello-friend"
 useRelativeCover = true
-summaryLength = 42
+summaryLength = 20
+paginate = 5
+TableOfContents=true
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
 
 [params]
-defaultTheme = "light"
+defaultTheme = "dark"
+showReadingTime = true
+toc = true
 
 [languages]
-  [languages.en]
-    title = "Konstantin Shibkov - blog"
-    subtitle = "sometimes, something"
+  [languages.ru]
+    title = "Konstantin Shibkov - блог"
+    subtitle = ""
     keywords = "java, js, php, linux, manjaro, shibkov, spring"
     copyright = ""
-    menuMore = "Show more"
-    writtenBy = "Written by"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    newerPosts = "Newer posts"
-    olderPosts = "Older posts"
-    minuteReadingTime = "min read"
+    menuMore = "Показать еще"
+    writtenBy = "Автор"
+    readMore = "Читать"
+    readOtherPosts = "Другие записи"
+    newerPosts = "В будущее"
+    olderPosts = "В прошлое"
+    minuteReadingTime = "мин на прочтение"
     dateFormatSingle = "02.01.2006"
     dateFormatList = "02.01.2006"
     # leave empty to disable, enter display text to enable
     # lastModDisplay = ""
 
-    [languages.en.params.logo]
+    [languages.ru.params.logo]
       logoText = "konstantin.sh"
       logoHomeLink = "/"
     # or
@@ -34,42 +45,8 @@ defaultTheme = "light"
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
 
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-  [languages.ru]
-    title = "Константин Шибков - блог"
-    subtitle = "A simple theme for Hugo"
-    keywords = ""
-    copyright = ""
-    menuMore = "Show more"
-    writtenBy = "Written by"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    newerPosts = "Newer posts"
-    olderPosts = "Older posts"
-    minuteReadingTime = "min read"
-    dateFormatSingle = "2006-01-02"
-    dateFormatList = "2006-01-02"
-    # leave empty to disable, enter display text to enable
-    # lastModDisplay = ""
-
-    [languages.ru.params.logo]
-      logoText = "hello friend"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
-
     [languages.ru.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
       [[languages.ru.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
+        identifier = "about"
+        name = "🧔🏽‍"
+        url = "/about"
