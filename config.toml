@@ -6,7 +6,8 @@ theme = "hello-friend"
 useRelativeCover = true
 summaryLength = 20
 paginate = 5
-TableOfContents=true
+TableOfContents = true
+enableRobotsTXT = true
 
 [markup]
   [markup.tableOfContents]
@@ -22,7 +23,7 @@ toc = true
 [languages]
   [languages.ru]
     title = "Konstantin Shibkov - блог"
-    subtitle = ""
+    subtitle = "личный блог"
     keywords = "java, js, php, linux, manjaro, shibkov, spring"
     copyright = ""
     menuMore = "Показать еще"
