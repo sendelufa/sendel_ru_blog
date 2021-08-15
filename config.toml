@@ -22,13 +22,13 @@ toc = true
 author = 'Shibkov Konstantin'
 description = "Статьи о java и linux, руководства и мануалы"
 
-[Taxonomies]
-    tag = "tags"
+[taxonomies]
+tag = "tags"
 
 [languages]
   [languages.ru]
     title = "Konstantin Shibkov - блог"
-    subtitle = "личный блог"
+    subtitle = "Статьи о java и linux, руководства и мануалы"
     keywords = "java, js, php, linux, manjaro, shibkov, spring"
     copyright = ""
     menuMore = "Показать еще"
@@ -40,6 +40,7 @@ description = "Статьи о java и linux, руководства и ману
     minuteReadingTime = "мин на прочтение"
     dateFormatSingle = "02.01.2006"
     dateFormatList = "02.01.2006"
+    toc="dfsdf"
     # leave empty to disable, enter display text to enable
     # lastModDisplay = ""
 
