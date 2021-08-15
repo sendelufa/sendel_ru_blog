@@ -19,6 +19,11 @@ enableRobotsTXT = true
 defaultTheme = "dark"
 showReadingTime = true
 toc = true
+author = 'Shibkov Konstantin'
+description = "Статьи о java и linux, руководства и мануалы"
+
+[Taxonomies]
+    tag = "tags"
 
 [languages]
   [languages.ru]
@@ -39,7 +44,7 @@ toc = true
     # lastModDisplay = ""
 
     [languages.ru.params.logo]
-      logoText = "konstantin.sh"
+      logoText = "sendel.ru"
       logoHomeLink = "/"
     # or
     #
