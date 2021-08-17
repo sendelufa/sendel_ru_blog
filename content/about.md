@@ -1,9 +1,12 @@
 +++
-title = "Обо мне"
+title = "Konstantin Shibkov"
 showReadingTime = false
-tableOfContents = true
+tableOfContents = false
+toc = false
 +++
 
-```java
-// TODO: write about:me
-```
+## about:me
+
+- java developer
+- city: Ufa
+- k@shibkov.ru

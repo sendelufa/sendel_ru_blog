@@ -17,7 +17,7 @@ enableRobotsTXT = true
 
 [params]
 defaultTheme = "dark"
-showReadingTime = true
+showReadingTime = false
 toc = true
 author = 'Shibkov Konstantin'
 description = "Статьи о java и linux, руководства и мануалы"
