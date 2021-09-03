@@ -1,7 +1,7 @@
 +++
 title = "Настройка и добавление миграции Liquibase на Spring Boot"
 date = 2021-09-03T00:33:53+05:00
-draft = true
+draft = false
 author = "Konstantin Shibkov"
 tags = ["liquibase", "spring boot", "spring", "java"]
 categories = ["guide", "howto", "spring boot", "java"]
