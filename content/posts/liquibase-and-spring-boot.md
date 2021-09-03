@@ -281,8 +281,8 @@ databaseChangeLog: #параметр в котором находятся миг
 ```yaml
 databaseChangeLog:
   - changeSet:
-      id: create-author
-      author: Konstantin Shibkov
+      id: create-author #текстовый идентификатор (Обязателен)
+      author: Konstantin Shibkov # автор (Обязателен)
       changes:
         - createTable: # создаем новую таблицу
             tableName: author
