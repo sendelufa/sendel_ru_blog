@@ -8,6 +8,7 @@ summaryLength = 20
 paginate = 5
 TableOfContents = true
 enableRobotsTXT = true
+disqusShortname = 'sendel'
 
 [markup]
   [markup.tableOfContents]
