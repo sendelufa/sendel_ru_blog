@@ -1,14 +1,14 @@
 databaseChangeLog:
   - changeSet:
-      id: create-author
-      author: Konstantin Shibkov
+      id: create-author #текстовый идентификатор (Обязателен)
+      author: Konstantin Shibkov # автор (Обязателен)
       changes:
-        - createTable:
+        - createTable: # создаем новую таблицу
             tableName: author
-            columns:
+            columns: # объявления колонок
               - column:
                   name: id
-                  type: int
+                  type: bigint
                   autoIncrement: true
                   constraints:
                     primaryKey: true

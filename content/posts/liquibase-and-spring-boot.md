@@ -283,15 +283,18 @@ public class Author {
 - Файл `changelog` (мастер файл) - содержит список миграций (changeset),
 которые применяются к базе данных. Миграции выполняются последовательно,
 в том порядке в котором записаны. Возможные форматы файла: SQL, XML, JSON, YAML.
-Имя по умолчанию: `db.changelog-master`. <a href="https://vladmihalcea.com/hibernate-hbm2ddl-auto-schema/" target="_blank">в статье Vlad Mihalcea</a>
+Имя по умолчанию: `db.changelog-master`. 
+<a href="https://vladmihalcea.com/hibernate-hbm2ddl-auto-schema/" target="_blank">в статье Vlad Mihalcea</a>
 
 - Файлы `changeset` (файлы миграций) - каждый из файлов содержит набор изменений,
 которвые применяются к базе данных. На эти файлы ссылается `chagelog`.
 Если при выполнении миграций, файл был уже применен к базе данных - прописанные
 изменения в нем игнорируются.
-Возможные форматы файла: SQL, XML, JSON, YAML. [Документация](https://docs.liquibase.com/concepts/basic/changeset.html)
+Возможные форматы файла: SQL, XML, JSON, YAML. 
+<a href="https://docs.liquibase.com/concepts/basic/changeset.html" target="_blank">Документация</a>
 
-Liquibase при старте работы ищет `db.changelog-master` в `src/main/resources/db/changelog`.
+Liquibase при старте работы ищет файл с названием`db.changelog-master` в 
+директории `src/main/resources/db/changelog`.
 
 {{< callout type="info" >}}
 Если вы используете IDEA, то убедитесь что вы создали папки db и в ней папку changelog,
@@ -299,9 +302,15 @@ Liquibase при старте работы ищет `db.changelog-master` в `sr
 {{< /callout >}}
 
 Файлы `changeset` могут располагать как в той же папке что и `changelog`,
-так и в отдельной директории. Предлагаю создать для них директорию `changeset` в `src/main/resources/db/changelog`.
+так и в отдельной директории. Рекомендуется отдельная директория, создайте
+ для них директорию `changeset` в `src/main/resources/db/changelog`.
 
-Создайте файл `db.changelog-master.yaml`. Добавьте в него запись о первом файле миграции:
+Создайте файл `db.changelog-master.yaml`. 
+
+Полный путь до файла будет 
+`src/main/resources/db/changelog/db.changelog-master.yaml`
+
+Добавьте в него запись о первом файле миграции:
 
 ```yaml
 databaseChangeLog: #параметр в котором находятся миграции
@@ -439,7 +448,7 @@ databaseChangeLog:
       file: db/changelog/changeset/create-article-table.yaml
 ```
 
-Запускайте проект, если не запустился и ругается не миграции. 
+Запускайте проект, если не запустился и ругается на миграции. 
 Удалите из корня проекта базу данных.
 
 После запуска, переходите [в консоль h2](http://localhost:8080/h2-console) и там
@@ -509,9 +518,9 @@ databaseChangeLog:
 
 - вносите изменения в код Java приложения
 
-- проверяете на соотвествие кода и миграции
+- проверяете на соответcтвие кода и миграции
 
-- в одном коммите фиксируете код и миграцию
+- в одном коммите фиксируете код и миграцию вместе и одновременно
 
 > Вольный перевод блока статьи
 <a href="https://www.liquibase.org/get-started/best-practices" target="_blank">Some best practices to keep in mind when using Liquibase - Typical procedure for the developer</a>
