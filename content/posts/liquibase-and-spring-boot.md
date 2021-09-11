@@ -301,10 +301,6 @@ Liquibase при старте работы ищет файл с название
 а не одну папку с названием db.changelog
 {{< /callout >}}
 
-Файлы `changeset` могут располагать как в той же папке что и `changelog`,
-так и в отдельной директории. Рекомендуется отдельная директория, создайте
- для них директорию `changeset` в `src/main/resources/db/changelog`.
-
 Создайте файл `db.changelog-master.yaml`. 
 
 Полный путь до файла будет 
@@ -318,7 +314,12 @@ databaseChangeLog: #параметр в котором находятся миг
       file: db/changelog/changeset/create-author-table.yaml # путь к файлу миграции
 ```
 
-Создайте указанный файл миграции `create-author-table.yaml`.
+Файлы с содержимым миграций `changeset` могут располагаться как в той же папке что и `changelog`,
+так и в отдельной директории. Рекомендуется отдельная директория, создайте
+для них директорию `changeset` в `src/main/resources/db/changelog`.
+
+Создайте указанный файл миграции `create-author-table.yaml` в директории `src/main/resources/db/changelog/changeset`, полный путь до файла будет 
+`src/main/resources/db/changelog/changeset/create-author-table.yaml`
 
 ```yaml
 databaseChangeLog:
