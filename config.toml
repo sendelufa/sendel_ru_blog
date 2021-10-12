@@ -59,5 +59,5 @@ tag = "tags"
     [languages.ru.menu]
       [[languages.ru.menu.main]]
         identifier = "about"
-        name = "🧔🏽‍"
+        name = "‍Обо мне"
         url = "/about"
