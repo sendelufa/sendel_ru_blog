@@ -7,7 +7,7 @@ toc = false
 
 ## about:me
 
-- Java разработчик
+- <i class="fab fa-java"></i> Java разработчик 
 - по вопросам и предложениям: k@shibkov.ru / tg:[@sendel](https://www.telegram.me/sendel)
 
 ## Публикации на других ресурсах
@@ -20,5 +20,6 @@ toc = false
 
 ## Ссылки
 
-- <a href="https://github.com/sendelufa" target="_blank">GitHub</a>
-- <a href="https://www.youtube.com/c/KonstantinShibkov" target="_blank">YouTube канал</a>
+<i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sendel/" target="_blank">Linkedin</a>
+&nbsp;&nbsp;&nbsp;<i class="fab fa-github-square"></i> <a href="https://github.com/sendelufa" target="_blank">GitHub</a>
+&nbsp;&nbsp;&nbsp;<i class="fab fa-youtube-square"></i> <a href="https://www.youtube.com/c/KonstantinShibkov" target="_blank">YouTube канал</a>
