@@ -7,7 +7,7 @@ useRelativeCover = true
 summaryLength = 20
 paginate = 5
 TableOfContents = true
-enableRobotsTXT = true
+enableRobotsTXT = false
 disqusShortname = 'sendel'
 
 
