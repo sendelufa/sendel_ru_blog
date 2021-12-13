@@ -3,6 +3,7 @@ title = "Konstantin Shibkov"
 showReadingTime = false
 tableOfContents = false
 toc = false
+show_comments = false
 +++
 
 ## about:me
