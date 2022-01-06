@@ -1,7 +1,7 @@
 +++
 title = "Установка WSL2 в Windows 10/11"
 date = 2022-01-05T00:33:53+05:00
-draft = true
+draft = false
 author = "Konstantin Shibkov"
 tags = ["windows", "wsl", "linux"]
 categories = ["howto", "windows"]
