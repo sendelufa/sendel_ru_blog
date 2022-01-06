@@ -1,2 +1,3 @@
 public/**
 .vscode/settings.json
+.hugo_build.lock
