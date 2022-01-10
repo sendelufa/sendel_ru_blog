@@ -141,6 +141,69 @@ docker-compose up -d
 
 ## MongoDB
 
+### Docker
+```docker
+docker run \
+--detach \
+--name=[container-name] \
+--env="MONGO_INITDB_ROOT_USERNAME=[root-username]" \
+--env="MONGO_INITDB_ROOT_PASSWORD=[root-password]" \
+--publish [port]:27017 \
+--volume=[path-to-mongo-data]:/data/db \
+postgres
+```
+
+**Переменные:**
+
+- `[container-name]` - имя контейнера, например library_mongodb, mongodb.
+- `[root-username]` - имя пользователя root.
+- `[root-password]` - пароль для пользователя root.
+- `[port]` - порт через который можно будет подключится к базе данных в контейнере.
+- `[path-to-mongo-data]` - путь до директории, в которой будут хранятся файлы базы данных.
+Если параметр `volume` не указывать, все данные будут потерены если контейнер удалить.
+
+**Пример команды с установленными параметрами:**
+
+- Контейнер с именем mongodb доступен на порту 27017,
+пароль "12345678" у пользователя postgres , база данных сохраняется в директории /home/user/mongo-data:
+
+```docker
+docker run \
+--detach \
+--name=mongodb \
+--env="MONGO_INITDB_ROOT_USERNAME=root" \
+--env="MONGO_INITDB_ROOT_PASSWORD=12345678" \
+--publish 27017:27017 \
+--volume=/home/user/mongo-data:/data/db \
+mongo
+```
+
+### Docker Compose
+
+Создайте файл 'docker-compose.yml' с содержимым, поменяйте значения параметров
+при необходимости.
+
+```docker
+version: '3.3'
+services:
+  db:
+    image: mongo:latest
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: 'root'
+      MONGO_INITDB_ROOT_PASSWORD: '12345678'
+    ports:
+      - '27017:27017'
+    # данные всех бд контейнера будут сохранены в /home/user/mongo-data
+    volumes:
+      - /home/user/mongo-data:/data/db
+```
+
+Запуск. Перейдите в директорию с файлом `docker-compose.yml` и выполните:
+
+```docker
+docker-compose up -d
+```
 
 
 
