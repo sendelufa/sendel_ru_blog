@@ -1,7 +1,7 @@
 ---
 title: "Использование разных user/email в git репозиториях"
 date: 2022-01-11T22:43:52+05:00
-draft: true
+draft: false
 author: "Konstantin Shibkov"
 tags: ["git"]
 categories: ["git"]
