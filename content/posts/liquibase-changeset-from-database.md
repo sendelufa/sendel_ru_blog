@@ -188,6 +188,8 @@ Microsoft SQL Server | *.mssql.sql
 Полный список параметров <a href="https://docs.liquibase.com/commands/generatechangelog.html" target="_blank"> в официальной документации.</a>
 {{< /callout >}}
 
+Все параметры можно использовать в файле конфигурации `liquibase.properties`.
+
 Параметр | Описание      | Обязательный
 ---------|---------------|---------
  `--changeLogFile` | Путь до файла, куда будет сохранен changelog. Если файл существует, то будет ошибка выполнения команды. | ✔
@@ -198,6 +200,7 @@ Microsoft SQL Server | *.mssql.sql
 `--driver` | Указание JDBC драйвера | ❌
 `--dataOutputDirectory` | В указанную директорию сохранятся данные таблиц в формате CSV | ❌
 `--diffTypes` | Выбрать отдельные структуры БД для создания changelog. Возможные значение, через запятую: catalog, tables, functions, views, columns, indexes, foreignkeys, primarykeys, uniqueconstraints, data, storedprocedure, triggers, sequences | ❌
+`--includeSchema` | [true,false] Если true - в файле changeLog будет указана схема у таблиц. Если false - будет использоваться public. По умолчанию false |  ❌
 
 ## ⭐ Есть Hibernate код Entity, но нет БД
 
