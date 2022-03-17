@@ -1,3 +1,6 @@
 public/**
 .vscode/settings.json
 .hugo_build.lock
+.DS_Store
+.AppleDouble
+.LSOverride
