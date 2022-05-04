@@ -67,3 +67,7 @@ tag = "tags"
         identifier = "shorts"
         name = "‍🍧 shorts"
         url = "/shorts"
+      [[languages.ru.menu.main]]
+        identifier = "books"
+        name = " 📚 книги"
+        url = "/books"

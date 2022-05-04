@@ -1,5 +1,5 @@
 +++
-title = "Konstantin Shibkov"
+title = "about:me"
 showReadingTime = false
 tableOfContents = false
 toc = false
@@ -7,10 +7,13 @@ show_comments = false
 Comments = "false"
 +++
 
-## about:me
+## Константин Шибков
 
-- <i class="fab fa-java"></i> Java разработчик 
-- по вопросам и предложениям: k@shibkov.ru / tg:[@sendel](https://www.telegram.me/sendel)
+- <i class="fab fa-java"></i> Java разработчик
+- организатор трех Java Challenge
+- организатор #UfaAgile meetUp
+- консультирую по Java Core, Spring Boot
+- увлекаюсь фотографией ,
 
 ## Публикации на других ресурсах
 
@@ -25,3 +28,6 @@ Comments = "false"
 <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sendel/" target="_blank">Linkedin</a>
 &nbsp;&nbsp;&nbsp;<i class="fab fa-github-square"></i> <a href="https://github.com/sendelufa" target="_blank">GitHub</a>
 &nbsp;&nbsp;&nbsp;<i class="fab fa-youtube-square"></i> <a href="https://www.youtube.com/c/KonstantinShibkov" target="_blank">YouTube канал</a>
+&nbsp;&nbsp;&nbsp;<i class="fab fa-500px"></i> <a href="https://500px.com/p/sendel" target="_blank">Фотографии на 500px</a>
+
+- по вопросам и предложениям: k@shibkov.ru / tg:[@sendel](https://www.telegram.me/sendel)
