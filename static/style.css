@@ -9,7 +9,7 @@
   background-color: #5b5b5c;
   color: #bcbbbb;
 }
-..callout-success {
+.callout-success {
   background-color: #91cf91;
   border-color: #80c780;
   color: #3d8b3d;
@@ -27,4 +27,10 @@
 .callout p {
   padding: 0;
   margin: 0;
+}
+
+/* fix uppercase in Ubuntu in code blocks */
+pre,
+pre code {
+  font-feature-settings: normal;
 }
