@@ -26,7 +26,7 @@ Foo newFoo = foo.withX(1047);
 
 В `Immutables` возможно изменить шаблон наименования через аннотацию `@Value.Style`, опция называется `with="..."`, лишний раз подчеркивает `with` как соглашение по-умолчанию.
 
-Соглашение использовать `with` широко распространено, примеры сеттеров вы сможете найти в библиотеках <a href="https://github.com/google/guava" target="_blank">Guavа</a> и <a href="https://github.com/google/guava" target="_blank">Java Time</a>.
+Соглашение использовать `with` широко распространено, примеры сеттеров вы сможете найти в библиотеках <a href="https://github.com/google/guava" target="_blank">Guavа</a> и <a href="https://docs.oracle.com/javase/8/docs/api/java/time/package-summary.html" target="_blank">Java Time</a>.
 
 ## Just x(...)
 
