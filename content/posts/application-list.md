@@ -5,7 +5,6 @@ description:
 author: "Konstantin Shibkov"
 tags: ["applications", "tools", "mac", "windows", "linux"]
 categories: ["lists", "apps"]
-draft: true
 ---
 
 Здесь список приложений, которые использую повседневного и могу
