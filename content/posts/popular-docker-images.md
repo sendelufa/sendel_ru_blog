@@ -9,6 +9,7 @@ categories: ["docker"]
 ---
 
 {{< callout type="info" >}}
+updated 04.08.2022<br>
 <i class="fas fa-i-cursor"></i> Если найдете ошибку - пишите в комментарии или сразу стукните в телеграм <a href="https://t.me/sendel" target="_blank">@sendel</a>
 {{< /callout >}}
 
@@ -21,6 +22,16 @@ categories: ["docker"]
 ## MySQL
 
 ### Docker
+
+#### Одной строкой
+
+```bash
+docker run -d --name=mysql-container -e MYSQL_ROOT_PASSWORD=passw0rd -p 3306:3306 mysql
+```
+
+Пользователь root, пароль passw0rd, порт для подключения 3306.
+
+#### Возможные параметры
 
 ```docker
 docker run \
@@ -91,6 +102,16 @@ docker-compose up -d
 
 ### Docker
 
+#### Одной строкой
+
+```bash
+docker run -d --name=postgres-container -e POSTGRES_PASSWORD=passw0rd -p 5432:5432 postgres
+```
+
+Пользователь postgres, пароль passw0rd, порт для подключения 5432.
+
+#### Возможные параметры
+
 ```docker
 docker run \
 --detach \
@@ -155,6 +176,16 @@ docker-compose up -d
 ## MongoDB
 
 ### Docker
+#### Одной строкой
+
+```bash
+docker run -d --name=mongo-container -p 27017:27017 mongo
+```
+
+Подключение без пользователя по адресу mongodb://localhost:27017
+
+#### Возможные параметры
+
 ```docker
 docker run \
 --detach \
@@ -173,7 +204,7 @@ postgres
 - `[root-password]` - пароль для пользователя root.
 - `[port]` - порт через который можно будет подключится к базе данных в контейнере.
 - `[path-to-mongo-data]` - путь до директории, в которой будут хранятся файлы базы данных.
-Если параметр `volume` не указывать, все данные будут потерены если контейнер удалить.
+Если параметр `volume` не указывать, все данные будут потеряны если контейнер удалить.
 
 **Пример команды с установленными параметрами:**
 
@@ -297,12 +328,16 @@ services:
 docker-compose up -d
 ```
 
-## Отключение автостарта контейнеров
+## Автостарт контейнеров
 
-Чтобы контейнер всегда стартовал автоматически при старте системы, установите параметр `restart:no`
-для docker-compose или `--restart no` для docker команды.
+Чтобы контейнер всегда стартовал автоматически при старте системы или произошла ошибка и
+контейнер аварийно завершился, установите параметр `restart:always`
+для docker-compose или `--restart always` для docker команды.
+
 Если хотите чтобы был автостарт до того как вы вручную не остановите командой `docker stop`,
-используйте параметр `restart: unless-stopped` или `--restart unless-stopped` для docker команды. Пример:
+используйте параметр `restart: unless-stopped` или `--restart unless-stopped` для docker команды. 
+
+Пример:
 
 ```docker
 restart: unless-stopped
