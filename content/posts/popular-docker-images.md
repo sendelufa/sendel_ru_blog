@@ -36,21 +36,21 @@ docker run -d --name=mysql-container -e MYSQL_ROOT_PASSWORD=passw0rd -p 3306:330
 ```docker
 docker run \
 --detach \
---name=[container-name] \
---env="MYSQL_ROOT_PASSWORD=[root-password]" \
---env="MYSQL_DATABASE=[schema_name]" \
---publish [port]:3306 \
---volume=[path-to-Mysql-data]:/var/lib/mysql \
+--name=container-name \
+--env="MYSQL_ROOT_PASSWORD=root-password" \
+--env="MYSQL_DATABASE=schema_name" \
+--publish port:3306 \
+--volume=path-to-Mysql-data:/var/lib/mysql \
 mysql
 ```
 
 **Переменные:**
 
-- `[container-name]` - имя контейнера, например library_mysql, todo_mysql.
-- `[root-password]` - пароль для пользователя root.
-- `[schema_name]` - имя базы данных, создаваемой при старте контейнера
-- `[port]` - порт через который можно будет подключится к базе данных в контейнере.
-- `[path-to-Mysql-data]` - путь до директории, в которой будут хранятся файлы базы данных.
+- `container-name` - имя контейнера, например library_mysql, todo_mysql.
+- `root-password` - пароль для пользователя root.
+- `schema_name` - имя базы данных, создаваемой при старте контейнера
+- `port` - порт через который можно будет подключится к базе данных в контейнере.
+- `path-to-Mysql-data` - путь до директории, в которой будут хранятся файлы базы данных.
 Если параметр `volume` не указывать, все данные будут потерены если контейнер удалить.
 
 **Пример команды с установленными параметрами:**
@@ -115,20 +115,22 @@ docker run -d --name=postgres-container -e POSTGRES_PASSWORD=passw0rd -p 5432:54
 ```docker
 docker run \
 --detach \
---name=[container-name] \
---env="POSTGRES_PASSWORD=[postgres-password]" \
---publish [port]:5432 \
---volume=[path-to-postgres-data]:/var/lib/postgresql/data \
+--name=container-name \
+--env="POSTGRES_PASSWORD=postgres-password" \
+--env="POSTGRES_DB=db-name" \
+--publish port:5432 \
+--volume=path-to-postgres-data:/var/lib/postgresql/data \
 postgres
 ```
 
 **Переменные:**
 
-- `[container-name]` - имя контейнера, например library_postgres, todo_postgres.
-- `[postgres-password]` - пароль для пользователя postgres.
-- `[port]` - порт через который можно будет подключится к базе данных в контейнере.
-- `[path-to-postgres-data]` - путь до директории, в которой будут хранятся файлы базы данных.
-Если параметр `volume` не указывать, все данные будут потерены если контейнер удалить.
+- `container-name` - имя контейнера, например library_postgres, todo_postgres.
+- `postgres-password` - пароль для пользователя postgres.
+- `db-name` - имя бд, которая будет создана при старте контейнера, если не указывать будет postgres
+- `port` - порт через который можно будет подключится к базе данных в контейнере.
+- `path-to-postgres-data` - путь до директории, в которой будут хранятся файлы базы данных.
+Если параметр `volume` не указывать, все данные будут потеряны при удаления контейнера.
 
 По-умолчанию, имя пользователя `postgres`.
 
