@@ -1,6 +1,6 @@
 ---
 title: "Список моих программ на Windows/macOs/Linux"
-date: 1970-07-09T12:06:14-07:00
+date: 2022-07-09T12:06:14-07:00
 description: 
 author: "Konstantin Shibkov"
 tags: ["applications", "tools", "mac", "windows", "linux"]
@@ -25,7 +25,7 @@ categories: ["lists", "apps"]
 
 | Тип                               | macOs (intel + m1)                                                         | Windows                                                                                     | Linux                                                                                              |
 | --------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| Скриншоты                         | 🆓 [Snipaste](https://www.snipaste.com/)                                    | 🆓 [Snipaste](https://www.snipaste.com/)                                                     | 🆓 [Flameshot](https://flameshot.org/)                                                              |
+| Скриншоты                         | 🆓 [Shottr](https://shottr.cc/)                                             | 🆓 [Snipaste](https://www.snipaste.com/)                                                     | 🆓 [Flameshot](https://flameshot.org/)                                                              |
 | Переводчик                        | 🆓 [DeepL](https://www.deepl.com/translator)💰                               | 🆓 [DeepL](https://www.deepl.com/translator) 💰                                               | 🆓 [Crow Translate](https://crow-translate.github.io/)                                              |
 | Архиватор                         | 🆓 [Keka](https://www.keka.io/)                                             | 🆓 [PeaZip](https://peazip.github.io/)                                                       | 🆓 [PeaZip](https://peazip.github.io/)                                                              |
 | Переназначение клавиш клавиатуры  | 🆓 [Karabiner-Elements](https://karabiner-elements.pqrs.org/)               | 🆓 [AutoHotKey](https://www.autohotkey.com)                                                  | 🆓 [xmodmap](https://wiki.archlinux.org/title/Xmodmap_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9)) |
@@ -47,10 +47,15 @@ categories: ["lists", "apps"]
 
 ## только для macOS
 
-* 🆓 [BetterDisplay](https://github.com/waydabber/BetterDisplay) - Если мылит внешний монитор.
-* 🆓 [Raycast](https://www.raycast.com/) - прокаченный версия Spotlight. Быстрее, множество расширений, больше команд и хоткеев.
-* 🆓 [Rectangle](https://rectangleapp.com/) - для менеджмента окнами с клавиатуры, не так гибко как i3 в Linux, но и чуть лучше стандартного подхода Windows. А если пользуетесь RayCast - то там [встроенный менеджер окон](https://www.raycast.com/extensions/window-management)
-* 🆓 [AltTab](https://alt-tab-macos.netlify.app/) - удобное переключение окон с предпросмотром и с отдельными окнами для каждого приложения, как на Винде!
+* 🆓 [BetterDisplay](https://github.com/waydabber/BetterDisplay) - Если мылит внешний монитор. Это часто происходит,
+если у вас на мониторе 2560x1440 или 1920x1080 или другое на 4К.
+* 🆓 [Raycast](https://www.raycast.com/) - прокаченный версия Spotlight. Быстрее, множество расширений,
+больше команд и хоткеев.
+* 🆓 [Rectangle](https://rectangleapp.com/) - для менеджмента окнами с клавиатуры, не так гибко как i3 в Linux,
+но и чуть лучше стандартного подхода Windows. А если пользуетесь
+RayCast - то там [встроенный менеджер окон](https://www.raycast.com/extensions/window-management)
+* 🆓 [AltTab](https://alt-tab-macos.netlify.app/) - удобное переключение окон с предпросмотром и
+с отдельными окнами для каждого приложения, как на Винде!
 * 🆓 [Mos](https://mos.caldis.me/) - для тонкой настройки работы скроллинга в macOs.
 * 🆓 [Itsycal](https://www.mowglii.com/itsycal/) - календарь в тулбаре.
 * 🆓 [BackgroundMusic](https://github.com/kyleneideck/BackgroundMusic) - микшер для тонкой настройки громкости приложений.
