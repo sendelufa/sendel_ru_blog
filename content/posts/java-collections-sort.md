@@ -5,7 +5,6 @@ description:
 author: "Konstantin Shibkov"
 tags: ["java", "collection"]
 categories: ["java"]
-draft: true
 ---
 
 Для возможности сортировки объектов в коллекциях наследниках
