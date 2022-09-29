@@ -191,15 +191,15 @@ class Student implements Comparable<Student> {
 Давайте проверим, как это будет работать:
 
 ```java
- Student ivan = new Student("Иван", 4.3);
-        Student olga = new Student("Ольга", 4.7);
-        Student eugene = new Student("Женя", 3.0);
+var ivan = new Student("Иван", 4.3);
+var olga = new Student("Ольга", 4.7);
+var eugene = new Student("Женя", 3.0);
 
-        var studentList = Arrays.asList(ivan, olga, eugene);
-        System.out.println(studentList);
-        //сортировка списка
-        Collections.sort(studentList);
-        System.out.println(studentList);
+var studentList = Arrays.asList(ivan, olga, eugene);
+System.out.println(studentList);
+//сортировка списка
+Collections.sort(studentList);
+System.out.println(studentList);
 ```
 
 Вывод:
@@ -280,17 +280,17 @@ class ComparatorByAvgMark implements Comparator<Student> {
 метод `Collections.sort()`, который принимает компаратор:
 
 ```java
-        Student ivan = new Student("Иван", 4.3);
-        Student olga = new Student("Ольга", 4.7);
-        Student eugene = new Student("Женя", 3.0);
+var ivan = new Student("Иван", 4.3);
+var olga = new Student("Ольга", 4.7);
+var eugene = new Student("Женя", 3.0);
 
-        var studentList = Arrays.asList(ivan, olga, eugene);
-        System.out.println(studentList);
+var studentList = Arrays.asList(ivan, olga, eugene);
+System.out.println(studentList);
 
-        //сортировка списка c использованием компаратора
-        Collections.sort(studentList, new ComparatorByAvgMark());
+//сортировка списка c использованием компаратора
+Collections.sort(studentList, new ComparatorByAvgMark());
 
-        System.out.println(studentList);
+System.out.println(studentList);
 ```
 
 Вывод:
