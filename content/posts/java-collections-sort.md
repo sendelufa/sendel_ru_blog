@@ -134,8 +134,8 @@ class Student {
 
 ```java
 var ivan = new Student("Иван", 4.3);
-var olga = new Student("Ольга", 4.7);
-var eugene = new Student("Женя", 3.0);
+var olga = new Student("Ольга", 3.8);
+var eugene = new Student("Женя", 4.9);
 var studentList = Arrays.asList(ivan, olga, eugene);
 
 System.out.println(studentList);
@@ -192,8 +192,8 @@ class Student implements Comparable<Student> {
 
 ```java
 var ivan = new Student("Иван", 4.3);
-var olga = new Student("Ольга", 4.7);
-var eugene = new Student("Женя", 3.0);
+var olga = new Student("Ольга", 3.8);
+var eugene = new Student("Женя", 4.9);
 
 var studentList = Arrays.asList(ivan, olga, eugene);
 System.out.println(studentList);
@@ -205,8 +205,8 @@ System.out.println(studentList);
 Вывод:
 
 ```text
-[{n='Иван', m=4.3}, {n='Ольга', m=4.7}, {n='Женя', m=3.0}]
-[{n='Женя', m=3.0}, {n='Иван', m=4.3}, {n='Ольга', m=4.7}]
+[{n='Иван', m=4.3}, {n='Ольга', m=3.8}, {n='Женя', m=4.9}]
+[{n='Женя', m=4.9}, {n='Иван', m=4.3}, {n='Ольга', m=3.8}]
 ```
 
 Все отлично, список отсортирован по полю `name`.
@@ -276,13 +276,13 @@ class ComparatorByAvgMark implements Comparator<Student> {
 
 Также снова опущены проверки на null объектов o1, o2.
 
-Теперь можно использовать данный класс, и в этот раз нам пригодиться перегруженный
+Теперь можно использовать данный класс, и в этот раз нам пригодится перегруженный
 метод `Collections.sort()`, который принимает компаратор:
 
 ```java
 var ivan = new Student("Иван", 4.3);
-var olga = new Student("Ольга", 4.7);
-var eugene = new Student("Женя", 3.0);
+var olga = new Student("Ольга", 3.8);
+var eugene = new Student("Женя", 4.9);
 
 var studentList = Arrays.asList(ivan, olga, eugene);
 System.out.println(studentList);
@@ -296,8 +296,8 @@ System.out.println(studentList);
 Вывод:
 
 ```text
-[{n='Иван', m=4.3}, {n='Ольга', m=4.7}, {n='Женя', m=3.0}]
-[{n='Женя', m=3.0}, {n='Иван', m=4.3}, {n='Ольга', m=4.7}]
+[{n='Иван', m=4.3}, {n='Ольга', m=3.8}, {n='Женя', m=4.9}]
+[{n='Ольга', m=3.8}, {n='Иван', m=4.3}, {n='Женя', m=4.9}]
 ```
 
 И мы видим - сортировка по возрастанию средней оценки студента.
@@ -313,7 +313,7 @@ Collections.sort(studentList, new ComparatorByAvgMark().reversed());
 и в итоге получим нужный результат:
 
 ```text
-[{n='Ольга', m=4.7}, {n='Иван', m=4.3}, {n='Женя', m=3.0}]
+[{n='Женя', m=4.9}, {n='Иван', m=4.3}, {n='Ольга', m=3.8}]
 ```
 
 Но это еще не все что может компаратор, можно создавать цепочки. Например,
