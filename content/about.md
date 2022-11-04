@@ -1,5 +1,5 @@
 +++
-title = "about:me"
+title = "Константин Шибков"
 showReadingTime = false
 tableOfContents = false
 toc = false
@@ -7,13 +7,18 @@ show_comments = false
 Comments = "false"
 +++
 
-## Константин Шибков
-
 - <i class="fab fa-java"></i> Java разработчик
-- организатор трех Java Challenge
-- организатор #UfaAgile meetUp
+- организатор <a href="https://habr.com/ru/company/skillbox/blog/591623/" target="_blank">трех Java Challenge</a>
+- один из организаторов <a href="https://www.meetup.com/ru-RU/agileufa/" target="_blank">#UfaAgile meetUp</a>
 - консультирую по Java Core, Spring Boot
-- увлекаюсь фотографией ,
+- увлекаюсь фотографией
+
+<i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sendel/" target="_blank">Linkedin</a>
+&nbsp;&nbsp;&nbsp;<i class="fab fa-github-square"></i> <a href="https://github.com/sendelufa" target="_blank">GitHub</a>
+&nbsp;&nbsp;&nbsp;<i class="fab fa-youtube-square"></i> <a href="https://www.youtube.com/c/KonstantinShibkov" target="_blank">YouTube канал</a>
+&nbsp;&nbsp;&nbsp;<i class="fab fa-500px"></i> <a href="https://500px.com/p/sendel" target="_blank">Фотографии на 500px</a>
+
+- по вопросам и предложениям: k@shibkov.ru / tg:[@sendel](https://www.telegram.me/sendel)
 
 ## Публикации на других ресурсах
 
@@ -22,12 +27,3 @@ Comments = "false"
 - <a href="https://skillbox.ru/media/base/java_code_style_kak_pravilno_oformlyat_kod_java/" target="_blank">Java Code Style: как правильно оформлять код Java</a>
 - <a href="https://skillbox.ru/media/base/oblast_vidimosti_peremennykh_v_java/" target="_blank">Область видимости переменных в Java</a>
 - <a href="https://skillbox.ru/media/base/kak_ustanovit_redis_v_os_windows_bez_ispolzovaniya_docker/" target="_blank">Как установить Redis в ОС Windows без использования Docker</a>
-
-## Ссылки
-
-<i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sendel/" target="_blank">Linkedin</a>
-&nbsp;&nbsp;&nbsp;<i class="fab fa-github-square"></i> <a href="https://github.com/sendelufa" target="_blank">GitHub</a>
-&nbsp;&nbsp;&nbsp;<i class="fab fa-youtube-square"></i> <a href="https://www.youtube.com/c/KonstantinShibkov" target="_blank">YouTube канал</a>
-&nbsp;&nbsp;&nbsp;<i class="fab fa-500px"></i> <a href="https://500px.com/p/sendel" target="_blank">Фотографии на 500px</a>
-
-- по вопросам и предложениям: k@shibkov.ru / tg:[@sendel](https://www.telegram.me/sendel)
