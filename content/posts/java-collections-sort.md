@@ -1,9 +1,9 @@
 ---
-title: "Cортировка списков в Java"
+title: "Сортировка списков в Java"
 date: 2022-09-29T09:05:12+03:00
 description: 
 author: "Konstantin Shibkov"
-tags: ["java", "collection"]
+tags: ["java", "collection", "comparator", "comparable"]
 categories: ["java"]
 ---
 
