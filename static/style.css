@@ -12,17 +12,17 @@
 .callout-success {
   background-color: #91cf91;
   border-color: #80c780;
-  color: #3d8b3d;
+  color: #000000;
 }
 .callout-warning {
   background-color: #ebc063;
   border-color: #e8b64c;
-  color: #a07415;
+  color: #000000;
 }
 .callout-danger {
   background-color: #e27c79;
   border-color: #dd6864;
-  color: #9f2723;
+  color: #000000;
 }
 .callout p {
   padding: 0;
