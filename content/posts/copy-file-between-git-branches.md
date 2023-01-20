@@ -5,7 +5,7 @@ description:
 author: "Konstantin Shibkov"
 tags: ["git"]
 categories: ["git"]
-draft: true
+draft: false
 ---
 
 Иногда требуется скопировать файл из одной ветки или из другого коммита. Зачем?
