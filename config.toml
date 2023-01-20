@@ -10,6 +10,20 @@ TableOfContents = true
 enableRobotsTXT = false
 disqusShortname = 'sendel'
 
+[deployment]
+  [[deployment.matchers]]
+    # Cache static assets for 1 year.
+    pattern = "^.+\\.(js|css|svg|ttf)$"
+    cacheControl = "max-age=18144000, no-transform, public"
+    gzip = true
+  [[deployment.matchers]]
+    pattern = "^.+\\.(png|jpg|woff2)$"
+    cacheControl = "max-age=31536000, no-transform, public"
+    gzip = false
+  [[deployment.matchers]]
+    pattern = "^.+\\.(html|xml|json)$"
+    gzip = true
+
 
 [markup]
   [markup.tableOfContents]
