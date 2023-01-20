@@ -1,5 +1,5 @@
 ---
-title: "Список моих программ на Windows/macOs/Linux"
+title: "Список моих программ на Windows, macOs, Linux"
 date: 2022-07-09T12:06:14-07:00
 description: 
 author: "Konstantin Shibkov"
