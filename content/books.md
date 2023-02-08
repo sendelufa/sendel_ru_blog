@@ -1,12 +1,9 @@
-+++
-title = "Рекомендуемые книги"
-showReadingTime = false
-tableOfContents = false
-toc = false
-show_comments = false
-Comments = "false"
-date = "2023-02-08T23:50:43+05:00"
-+++
+---
+title: "Рекомендуемые книги"
+date: 2021-12-13T23:50:43+05:00
+description: "Художественная и техническая литература, которую прочитал и могу рекомендовать к прочтению"
+toc: false
+---
 
 ## <i class="fas fa-atlas"></i> Техническая литература
 
