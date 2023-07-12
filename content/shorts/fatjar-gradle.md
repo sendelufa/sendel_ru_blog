@@ -55,3 +55,27 @@ gradle clean shadowJar
 и в директории `build/libs/` появится fat jar.
 
 Profit! ✨
+
+## 🚨 Возможные ошибки
+
+Если возникает ошибка:
+
+```txt
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':xxxxx:shadowJar'.
+> org.apache.tools.zip.Zip64RequiredException: archive contains more than 65535 entries.
+
+  To build this archive, please enable the zip64 extension.
+  See: http://gradle.org/docs/2.1/dsl/org.gradle.api.tasks.bundling.Zip.html#org.gradle.api.tasks.bundling.Zip:zip64
+```
+
+Причина этого - использование zip32 и у него ограничение на 65535 записей внутри архива.
+Необходимо в `build.gradle` добавить параметр для shadowJar включающий zip64:
+
+```gradle
+shadowJar {
+  zip64 true
+}
+```
