@@ -2,7 +2,7 @@ baseURL = "/"
 languageCode = "ru"
 defaultContentLanguage = "ru"
 title = "Konstantin Shibkov blog"
-theme = "hello-friend"
+theme = "hugo-theme-stack"
 useRelativeCover = true
 summaryLength = 20
 paginate = 5
@@ -46,7 +46,7 @@ lastModDisplay = "[your display text]"
 tag = "tags"
 
 [languages]
-  [languages.ru]
+  [languages.ru.params]
     title = "Konstantin Shibkov - блог"
     subtitle = "Статьи о java и linux, руководства и мануалы"
     keywords = "java, js, php, linux, manjaro, shibkov, spring"
