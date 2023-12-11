@@ -8,10 +8,8 @@ tags: ["docker", "lamp", "mysql", "postgres", "mongo"]
 categories: ["docker"]
 ---
 
-{{< callout type="info" >}}
-updated 04.08.2022<br>
-<i class="fas fa-i-cursor"></i> Если найдете ошибку - пишите в комментарии или сразу стукните в телеграм <a href="https://t.me/sendel" target="_blank">@sendel</a>
-{{< /callout >}}
+> updated 04.08.2022<br>
+> <i class="fas fa-i-cursor"></i> Если найдете ошибку - пишите в комментарии или сразу стукните в телеграм <a href="https://t.me/sendel" target="_blank">@sendel</a>
 
 **🐋 Eсли у вас не установлен Docker:**
 

@@ -73,12 +73,13 @@ spring:
     enabled: false
 ```
 
-{{< code language="properties" title="Для application.properties" id="2" isCollapsed="true" >}}spring.liquibase.enabled = false
-{{< /code >}}
+```properties
+spring.liquibase.enabled = false
+```
 
 Если это не сделать, то наше приложение не запустится, так как не созданы конфигурации миграций.
 
-{{< code language="log" title="Ошибка запуска" isCollapsed="true">}}
+```log
 ***************************
 APPLICATION FAILED TO START
 ***************************
@@ -90,7 +91,7 @@ Liquibase failed to start because no changelog could be found at 'classpath:/db/
 Action:
 
 Make sure a Liquibase changelog is present at the configured path.
-{{< /code >}}
+```
 
 ### Настройка и подключение h2
 
@@ -113,14 +114,14 @@ spring:
 
 Для `application.properties`:
 
-{{< code language="properties" title="Для application.properties" id="3" isCollapsed="true" >}}
+```property
 spring.liquibase.enabled=false
 spring.datasource.url=jdbc:h2:file:./db
 spring.datasource.username=u
 spring.datasource.password=1
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 spring.h2.console.enabled=true
-{{< /code >}}
+```
 
 После запуска приложения перейдите по ссылке <a href="http://localhost:8080/h2-console" target="_blank">http://localhost:8080/h2-console</a>
 и попадете в консоль управления базой данных.
@@ -138,7 +139,7 @@ Connect попадете в упраление базой данных.
 
 Код каждого класса (геттеры и сеттеры не показаны):
 
-{{< code language="java" title="class Article" id="4" isCollapsed="true" >}}
+```java
 @Entity
 public class Article {
   @Id
@@ -157,9 +158,9 @@ public class Article {
   // getters & setters
 
 }
-{{< /code >}}
+```
 
-{{< code language="java" title="class Author" id="5" isCollapsed="true" >}}
+```java
 @Entity
 public class Author {
 
@@ -173,13 +174,11 @@ public class Author {
   // getters & setters
   
 }
-{{< /code >}}
+```
 
 ## Работа Hibernate
 
-{{< callout type="info" >}}
-Пропустите этот раздел, если вы знаете как Hibernate обновляет и изменяет структуру БД.
-{{< /callout >}}
+> Пропустите этот раздел, если вы знаете как Hibernate обновляет и изменяет структуру БД.
 
 Как можно управлять структурой базы данных через Hibernate?
 Есть параметр, который указывает что делает Hibernate при запуске приложения:
@@ -256,9 +255,8 @@ public class Author {
 }
 ```
 
-{{< callout type="info" >}}Тоже самое будет, если использовать
-@Column(name = "fullname")
-{{< /callout >}}
+> Тоже самое будет, если использовать
+> `@Column(name = "fullname")`
 
 запускайте приложение снова и заходите в консоль. Мы ожидаем, что поле name будет переименовано в fullname.
 Но Hibernate просто создал еще одну колонку, старая осталась.
@@ -272,9 +270,7 @@ public class Author {
 были повторены не только локально, но и у каждого участника команды проекта? Тут и приходит на помощь миграция версий
 баз данных. Даже на таком простом примере, уже виден профит.
 
-{{< callout type="info" >}}
-Перед следующей главой, вернитесь к исходной версии кода, где у автора было поле `name`.
-{{< /callout >}}
+> Перед следующей главой, вернитесь к исходной версии кода, где у автора было поле `name`.
 
 ## Пишем первую миграцию для Liquibase
 
@@ -296,10 +292,8 @@ public class Author {
 Liquibase при старте работы ищет файл с названием`db.changelog-master` в 
 директории `src/main/resources/db/changelog`.
 
-{{< callout type="info" >}}
-Если вы используете IDEA, то убедитесь что вы создали папки db и в ней папку changelog,
+> Если вы используете IDEA, то убедитесь что вы создали папки db и в ней папку changelog,
 а не одну папку с названием db.changelog
-{{< /callout >}}
 
 Создайте файл `db.changelog-master.yaml`. 
 

@@ -8,9 +8,7 @@ tableOfContents : false
 toc : false
 ---
 
-{{< callout type="info" >}}
-<i class="fas fa-language"></i> Перевод статьи <a href="https://programming.guide/immutable-setters-naming-conventions.html" target="_blank">Immutable Setters: Naming Conventions</a>
-{{< /callout >}}
+> <i class="fas fa-language"></i> Перевод статьи <a href="https://programming.guide/immutable-setters-naming-conventions.html" target="_blank">Immutable Setters: Naming Conventions</a>
 
 Сеттер поля для иммутабельного объекта отличается от обычного сеттера. Так как не изменяет объект, а создает новый с измененым параметром класса. Это веская причина для изменения нейминга методов.
 
