@@ -1,6 +1,6 @@
 +++
-title = "Константин Шибков"
-showReadingTime = false
+title = "Обо мне"
+readingTime = false
 tableOfContents = false
 toc = false
 show_comments = false

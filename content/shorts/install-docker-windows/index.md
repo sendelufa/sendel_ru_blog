@@ -7,9 +7,7 @@ description: "Краткое описание установки и полезн
 
 Краткая выдержка команд для установки Docker.
 
-{{< callout type="info" >}}
-<i class="fas fa-info-circle"></i> <a href="https://docs.docker.com/desktop/windows/wsl" target="_blank">Полный официальный гайд на странице Docker.</a>
-{{< /callout >}}
+> <i class="fas fa-info-circle"></i> <a href="https://docs.docker.com/desktop/windows/wsl" target="_blank">Полный официальный гайд на странице Docker.</a>
 
 ## Необходимые условия
 
@@ -29,9 +27,7 @@ wsl -l -v
 
 ## Скачивание и установка Docker
 
-{{< callout type="info" >}}
-Все действия выполнялись на Windows 11 (сборка 22000.376) и Docker 4.3.2
-{{< /callout >}}
+> Все действия выполнялись на Windows 11 (сборка 22000.376) и Docker 4.3.2
 
 - <a href="https://docs.docker.com/get-docker/">Скачайте Windows</a> установку с официального сайта.
 - Запустите установку и просто прожимайте Далее. По окончанию, перезагрузитесь или выполните  Выход (Log out).

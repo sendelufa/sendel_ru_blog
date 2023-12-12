@@ -1,14 +1,13 @@
 baseURL = "/"
 languageCode = "ru"
 defaultContentLanguage = "ru"
-title = "Konstantin Shibkov blog"
-theme = "hello-friend"
+title = "Konstantin Shibkov"
+theme = "hugo-theme-stack"
 useRelativeCover = true
 summaryLength = 20
 paginate = 5
 TableOfContents = true
 enableRobotsTXT = false
-disqusShortname = 'sendel'
 
 [deployment]
   [[deployment.matchers]]
@@ -41,12 +40,22 @@ toc = true
 author = 'Shibkov Konstantin'
 description = "Статьи о java и linux, руководства и мануалы"
 lastModDisplay = "[your display text]"
+mainSections = ["posts"]
+[params.sidebar]
+  compact = true
+[params.sidebar.avatar]
+  enabled = true
+  local = true
+  src = "img/ava.jpg"
+[[params.widgets.page]]
+type = "toc"
+
 
 [taxonomies]
 tag = "tags"
 
 [languages]
-  [languages.ru]
+  [languages.ru.params]
     title = "Konstantin Shibkov - блог"
     subtitle = "Статьи о java и linux, руководства и мануалы"
     keywords = "java, js, php, linux, manjaro, shibkov, spring"
@@ -75,13 +84,22 @@ tag = "tags"
     [languages.ru.menu]
       [[languages.ru.menu.main]]
         identifier = "about"
-        name = "‍🧑 Обо мне"
+        name = "Обо мне"
         url = "/about"
+        weight = -100
+      [[languages.ru.menu.main.params]]
+        icon = "about"
       [[languages.ru.menu.main]]
         identifier = "shorts"
-        name = "‍🍧 shorts"
+        name = "Shorts"
         url = "/shorts"
+        weight = 100
+      [[languages.ru.menu.main.params]]
+        icon = "ice-cream"
       [[languages.ru.menu.main]]
         identifier = "books"
-        name = " 📚 книги"
+        weight = 50
+        name = "Kниги"
         url = "/books"
+      [[languages.ru.menu.main.params]]
+        icon = "book-2"
