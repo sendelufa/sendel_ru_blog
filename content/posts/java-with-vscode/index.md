@@ -91,15 +91,23 @@ target="_blank">Extension Pack for Java</a>
 
 ### SonarLint
 
-Анализ кода, куда же без него. Также можно и подключить
-удаленный SonarQube.
+Анализ кода, куда же без него. Ставим расширение SonarLint. Оно будет давать подсказки
+по коду, а также позволяет подключить SonarQube сервер и выполнять проверки проекта
+с получением отчета. Ссылка на расширение:
 
 <a href="https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode"
 target="_blank">SonarLint</a>
 
+Возможно потребуется установка Node.js. Найдете подробности на странице https://github.com/nodesource/distributions
+
 ![SonarLint](sonarlint_ext.png)
 
-Возможно потребуется установка Node.js. Найдете подробности на странице https://github.com/nodesource/distributions
+Для подключения SonarQube сервера, следуйте по инструкции на скриншоте. Достаточно ввести
+адрес сервера, дальше получение токена будет произведено автоматически через авторизацию
+в браузере.
+
+![Подключение SonarQube сервера](connect_sonar_qube.png)
+
 
 ### 🧪 Промежуточная проверка
 
@@ -201,6 +209,10 @@ target="_blank">PlantUML</a>
 target="_blank">AsciiDoc</a>
 - <a href="https://marketplace.visualstudio.com/items?itemName=GitLab.gitlab-workflow"
 target="_blank">GitLab Workflow - CR/CI/MR</a>
+- <a href="https://open-vsx.org/extension/phil294/git-log--graph"
+target="_blank">git-log--graph - визуализация веток и коммитов, cherry-pick и т.д.</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker"
+target="_blank">Docker</a>
 - <a href="https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools"
 target="_blank">Kubernetes</a>
 - <a href="https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer"
@@ -221,6 +233,23 @@ target="_blank">Swagger Viewer</a>
     "asciidoc.extensions.enableKroki": true
 }
 ```
+
+💡 Для подключения Self Hosted Gitlab необходимо:
+- сгенерируйте токен для доступа к api. Для этого перейдите в настройки (Preferences) профиля в гитлабе,
+далее в пункт Access Tokens, создайте новый токен и выберите scopes: api и read_api, скопируйте токен.
+- перейдите в расширение GitLab Workflow, нажмите Add Account. Введите адрес гитлаб и в следующем
+предложении ввода вставьте токен.
+
+![Добавить аккаунт Gitlab](gitlab_connect.png)
+
+После успешного добавления связи с гитлаб, у вас появляются возможности:
+
+- получать списки MR, с фильтрацией
+- выполнять Code Review с написанием комментариев к измененным строкам
+- видеть результат выполнения Pipelines MR
+
+![Gitlab MRs](gitlab_mr.png)
+
 
 
 ### Как повторить опыт использования IDEA
