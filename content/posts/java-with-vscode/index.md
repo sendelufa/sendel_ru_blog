@@ -6,6 +6,7 @@ author: "Konstantin Shibkov"
 tags: ["java", "VSCode", "spring boot"]
 categories: ["soft", "java"]
 draft: false
+image: cover.webp
 ---
 
 Давайте признаемся, что подавляющее большинство пишет Java код используя
