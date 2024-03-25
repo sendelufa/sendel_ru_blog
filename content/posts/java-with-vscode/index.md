@@ -1,7 +1,7 @@
 ---
 title: "Пишем Java код в VSCode"
 date: 2024-03-25T10:57:26+05:00
-description: Как перейти на VSCode для разработки на Java и Spring Boot
+description: Как перейти с JetBrains на VSCode для разработки код на Java + Spring Boot. Готовый список расширений, примеры настроек IDE, подготовка расширений для работы. В итоге, соберем полноценную среду разработки.
 author: "Konstantin Shibkov"
 tags: ["java", "VSCode", "spring boot"]
 categories: ["soft", "java"]
