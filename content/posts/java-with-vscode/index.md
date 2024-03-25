@@ -306,10 +306,11 @@ Eсли и вам так удобно - устанавливайте парам�
 
 ```json
 {
-    "editor.fontFamily": "'Iosevka', 'Droid Sans Mono', 'monospace', monospace",
+    "editor.fontFamily": "'Iosevka', 'monospace', monospace",
     "editor.fontSize": 14,
     "editor.fontLigatures": true
 }
+```
 
 #### Кнопки схлопывания, folding
 
