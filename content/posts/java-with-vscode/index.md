@@ -44,11 +44,11 @@ JetBrains IDEA. Да, это отличная IDE. Для нее есть бол
 
 ## Установка VSCode и расширений
 
-⬇️ {{< newtabref  href="https://code.visualstudio.com/" title="Сайт для скачиванию установщика" >}}
+⬇️ {{< newtabref  href="https://code.visualstudio.com/" title="Сайт для скачивания установщика" >}}
 
 ⚠️ Вы можете повторить все действия на любой ОС. Надо учесть:
 
-- Если у вас Windows - желательно использовать WSL 2 для работы с Linux среде
+- Если у вас Windows - желательно использовать WSL 2 для работы с Linux средой
 - Если у вас Linux/macOS все действия выполняются локально.
 - Если у вас установлен Code - OSS в Arch/Manjaro или дистрибутив основанный на Arch, чтобы включить официальный магазин расширений VSCode установите из AUR `pamac install code-marketplace`. Это позволит избежать ошибку при установке расширений `Extension 'tinhn90.flyway-migration-helper' not found.`
 
