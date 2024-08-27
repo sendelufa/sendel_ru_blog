@@ -29,7 +29,7 @@ wsl -l -v
 
 > Все действия выполнялись на Windows 11 (сборка 22000.376) и Docker 4.3.2
 
-- <a href="https://docs.docker.com/get-docker/">Скачайте Windows</a> установку с официального сайта.
+- {{< newtabref  href="https://docs.docker.com/desktop/install/windows-install/" title="Скачайте по ссылке" >}} установку Docker Desktop для Windows с официального сайта.
 - Запустите установку и просто прожимайте Далее. По окончанию, перезагрузитесь или выполните  Выход (Log out).
 
 ![time to logout or restart!](docker_installer.png)
@@ -72,11 +72,11 @@ docker run -it --rm mikesplain/telnet towel.blinkenlights.nl
 
 ## 🎁 Полезные ссылки
 
-- <a href="https://www.freecodecamp.org/news/the-docker-handbook/" target="_blank">The Docker Handbook – 2021 Edition</a>
+- {{< newtabref  href="https://www.freecodecamp.org/news/the-docker-handbook/" title="The Docker Handbook – 2021 Edition" >}}
 
-Изучаем Docker на Habr
+Изучаем Docker на Habr:
 
-- <a href="https://habr.com/ru/company/ruvds/blog/438796/" target="_blank">Часть 1: основы</a>
-- <a href="https://habr.com/ru/company/ruvds/blog/439978/" target="_blank">Часть 2: термины и концепции</a>
-- <a href="https://habr.com/ru/company/ruvds/blog/439980/" target="_blank">Часть 3: файлы Dockerfile</a>
-- <a href="https://habr.com/ru/company/ruvds/blog/440660/" target="_blank">Docker команды</a>
+- {{< newtabref  href="https://habr.com/ru/company/ruvds/blog/438796/" title="Часть 1: основы" >}}
+- {{< newtabref  href="https://habr.com/ru/company/ruvds/blog/439978/" title="Часть 2: термины и концепции" >}}
+- {{< newtabref  href="https://habr.com/ru/company/ruvds/blog/439980/" title="Часть 3: файлы Dockerfile" >}}
+- {{< newtabref  href="https://habr.com/ru/company/ruvds/blog/440660/" title="Docker команды" >}}
