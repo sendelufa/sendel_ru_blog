@@ -8,22 +8,23 @@ Comments = "false"
 +++
 
 - <i class="fab fa-java"></i> Java разработчик
-- веду телеграм канал <a href="https://t.me/three_monitors" target="_blank">«Три монитора»</a>
-- провожу встречи <a href="https://t.me/JavaKeyFrames" target="_blank">Алгоритмического Клуба JavaKeyFrames</a>
-- один из организаторов <a href="https://agileufa.ru" target="_blank">#AgileUfa митапов</a>
-- организатор <a href="https://habr.com/ru/company/skillbox/blog/591623/" target="_blank">трех Java Challenge</a>
+- веду телеграм канал {{< newtabref  href="https://t.me/three_monitors" title="«Три монитора»" >}}
+- провожу встречи {{< newtabref  href="https://t.me/JavaKeyFrames" title="Алгоритмического Клуба JavaKeyFrames" >}}
+- один из организаторов {{< newtabref  href="https://agileufa.ru" title="#AgileUfa митапов" >}}
+- организатор {{< newtabref  href="https://habr.com/ru/company/skillbox/blog/591623/" title="трех Java Challenge" >}}
 - консультирую по Java Core, Spring Boot, провожу вебинары
 - увлекаюсь фотографией
 
-<i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sendel/" target="_blank">Linkedin</a>
-&nbsp;&nbsp;&nbsp;<i class="fab fa-github-square"></i> <a href="https://github.com/sendelufa" target="_blank">GitHub</a>
-&nbsp;&nbsp;&nbsp;<i class="fab fa-youtube-square"></i> <a href="https://www.youtube.com/c/KonstantinShibkov" target="_blank">YouTube канал</a>
-&nbsp;&nbsp;&nbsp;<i class="fab fa-500px"></i> <a href="https://500px.com/p/sendel" target="_blank">Фотографии на 500px</a>
+<i class="fab fa-linkedin"></i> {{< newtabref  href="https://www.linkedin.com/in/sendel/" title="Linkedin" >}}
+&nbsp;&nbsp;&nbsp;<i class="fab fa-github-square"></i> {{< newtabref  href="https://github.com/sendelufa" title="GitHub" >}}
+&nbsp;&nbsp;&nbsp;<i class="fab fa-youtube-square"></i> {{< newtabref  href="https://www.youtube.com/c/KonstantinShibkov" title="YouTube канал" >}}
+&nbsp;&nbsp;&nbsp;<i class="fas fa-camera-retro"></i> {{< newtabref  href="https://photo.sendel.ru" title="Моя фотогалерея" >}}
 
 - по вопросам и предложениям: k@shibkov.ru / tg:[@sendel](https://www.telegram.me/sendel)
 
 ## Публикации на других ресурсах
 
+- <a href="https://habr.com/ru/companies/cdek_blog/articles/811631/" target="_blank">Как начать писать на Java в VSCode</a>
 - <a href="https://habr.com/ru/companies/skillbox/articles/767804/" target="_blank">Как упростить себе жизнь: удобные юнит-тесты с JUnit и AssertJ</a>
 - <a href="https://skillbox.ru/media/base/chto-novogo-v-java-17/" target="_blank">Switch-выражения, класс record и запечатанные классы на практике: что нового в Java 17</a>
 - <a href="https://habr.com/ru/companies/skillbox/articles/591623/" target="_blank">Skillbox Java Challenge: игра “на выживание” для разработчиков</a>
