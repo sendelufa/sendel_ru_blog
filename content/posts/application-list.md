@@ -1,7 +1,7 @@
 ---
-title: "Список моих программ на Windows, macOs, Linux"
-date: 2022-07-09T12:06:14-07:00
-description: 
+title: "Список моих программ на Windows, macOS, Linux"
+date: 2024-11-08T12:06:14-07:00
+description: Универсальные список программ для решения повседневных задач
 author: "Konstantin Shibkov"
 tags: ["applications", "tools", "mac", "windows", "linux"]
 categories: ["lists", "apps"]
@@ -23,7 +23,7 @@ categories: ["lists", "apps"]
 
 ## Универсальные задачи под все ОС
 
-| Тип                               | macOs (intel + m1)                                                         | Windows                                                                                     | Linux                                                                                              |
+| Тип                               | macOS                                                        | Windows                                                                                     | Linux                                                                                              |
 | --------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
 | Скриншоты                         | 🆓 [Shottr](https://shottr.cc/)                                             | 🆓 [Snipaste](https://www.snipaste.com/)                                                     | 🆓 [Flameshot](https://flameshot.org/)                                                              |
 | Переводчик                        | 🆓 [DeepL](https://www.deepl.com/translator)💰                               | 🆓 [DeepL](https://www.deepl.com/translator) 💰                                               | 🆓 [Crow Translate](https://crow-translate.github.io/)                                              |
@@ -34,16 +34,17 @@ categories: ["lists", "apps"]
 | Эмулятор терминала                | 🆓 [Warp](https://www.warp.dev/)                                            | 🆓 [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701) | 🆓 [kitty](https://github.com/kovidgoyal/kitty)                                                     |
 | Клиент реляционных БД             | 🆓 [Dbeaver](https://dbeaver.io/)                                           | 🆓 [Dbeaver](https://dbeaver.io/)                                                            | 🆓 [Dbeaver](https://dbeaver.io/)                                                                   |
 | Векторный редактор                | 🆓 [Inkscape](https://inkscape.org/)                                        | 🆓 [Inkscape](https://inkscape.org/)                                                         | 🆓 [Inkscape](https://inkscape.org/)                                                                |
-| Анализ заполнения дисков          | 💰 [DaisyDisk](https://daisydiskapp.com/) ($9.99)                           | 🆓 [Scanner](http://www.steffengerlach.de/freeware/)                                         | 🆓 [JDiskReporter](http://www.jgoodies.com/downloads/jdiskreport/)                                  | 🆓 [JDiskReporter](http://www.jgoodies.com/downloads/jdiskreport/) |
+| Анализ заполнения дисков          | 💰 [DaisyDisk](https://daisydiskapp.com/) ($9.99)                           | 🆓 [Scanner](http://www.steffengerlach.de/freeware/)                                         | 🆓 [JDiskReporter](http://www.jgoodies.com/downloads/jdiskreport/)                                  |
 | Сеть для LAN игр                  | 🆓 [ZeroTier](https://www.zerotier.com/)                                    | 🆓 [ZeroTier](https://www.zerotier.com/)                                                     | 🆓 [ZeroTier](https://www.zerotier.com/)                                                            |
 | Торрент клиент                    | 🆓 [Transmission](https://transmissionbt.com/)                              | 🆓 [Transmission](https://transmissionbt.com/)                                               | 🆓 [Transmission](https://transmissionbt.com/)                                                      |
 | Мультибуфер копирования и вставки | 🆓 [CopyQ](https://hluk.github.io/CopyQ/)                                   | 🆓 [CopyQ](https://hluk.github.io/CopyQ/)                                                    | 🆓 [CopyQ](https://hluk.github.io/CopyQ/)                                                           |
 | Томато таймер                     | 🆓 [Flow](https://flowapp.info/)                                            | 🆓 [Pomotroid](https://splode.github.io/pomotroid/)                                          | 🆓 [Pomotroid](https://splode.github.io/pomotroid/)                                                 |
 | Запись скринкастов                | 🆓 [OBS Studio](https://obsproject.com/)                                    | 🆓 [OBS Studio](https://obsproject.com/)                                                     | 🆓 [OBS Studio](https://obsproject.com/)                                                            |
-| Менеджер паролей                  | 🆓 [Bitwarden](https://bitwarden.com/) 💰                                    | 🆓 [Bitwarden](https://bitwarden.com/) 💰                                                     | 🆓 [Bitwarden](https://bitwarden.com/) 💰                                                            |
+| Менеджер паролей                  | 🆓 [KeePassX](https://keepassxc.org/)                                    | 🆓 [KeePassX](https://keepassxc.org/)                                                      | 🆓 [KeePassX](https://keepassxc.org/)                                                            |
 | Удаленное управление ПК           | 🆓 [AnyDesk](https://anydesk.com/) 💰                                        | 🆓 [AnyDesk](https://anydesk.com/) 💰                                                         | 🆓 [AnyDesk](https://anydesk.com/) 💰                                                                |
 | Калькулятор                       | 🆓 [SpeedCrunch](https://heldercorreia.bitbucket.io/speedcrunch/index.html) | 🆓 [SpeedCrunch](https://heldercorreia.bitbucket.io/speedcrunch/index.html)                  | 🆓 [SpeedCrunch](https://heldercorreia.bitbucket.io/speedcrunch/index.html)                         |
 | Короткие списки дел               | 🆓 [Microsoft To-Do](https://todo.microsoft.com/tasks/)                     | 🆓 [Microsoft To-Do](https://todo.microsoft.com/tasks/)                                      | 🆓 [Microsoft To-Do](https://todo.microsoft.com/tasks/) (web)                                       |
+| Мультибраузерность (позволяет использовать разные браузеры и профили для определенных доменов и правил) | 🆓 [Velja](https://sindresorhus.com/velja) | 🆓 [Browser Tamer](https://github.com/aloneguid/bt) | ❔
 
 ## только для macOS
 
@@ -59,6 +60,7 @@ RayCast - то там [встроенный менеджер окон](https://w
 * 🆓 [Mos](https://mos.caldis.me/) - для тонкой настройки работы скроллинга в macOs.
 * 🆓 [Itsycal](https://www.mowglii.com/itsycal/) - календарь в тулбаре.
 * 🆓 [BackgroundMusic](https://github.com/kyleneideck/BackgroundMusic) - микшер для тонкой настройки громкости приложений.
+* 🆓 [MonitorControl](https://github.com/MonitorControl/MonitorControl) - программаня настройка ярокости мониторов.
 
 ## только для Windows
 
