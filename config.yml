@@ -27,6 +27,9 @@ markup:
     renderer:
       unsafe: true
 params:
+  Author:
+    name: Konstantin Shibkov
+    email: sendel@sendel.ru
   defaultTheme: dark
   showReadingTime: false
   toc: true
