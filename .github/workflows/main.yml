@@ -16,10 +16,16 @@ jobs:
       image: ubuntu:20.04
     name: Build site and create artifact
     steps:
+      - name: Install Git
+        run: apt-get update && apt-get install -y git
+        
       - name: Checkout repository with submodules
         uses: actions/checkout@v4
         with:
           submodules: recursive
+          
+      - name: Ensure submodules are at correct commit
+        run: git submodule update --init --recursive --checkout
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
