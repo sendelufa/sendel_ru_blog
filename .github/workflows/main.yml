@@ -11,9 +11,7 @@ env:
 
 jobs:
   build:
-    runs-on: self-hosted
-    container:
-      image: ubuntu:20.04
+    runs-on: ubuntu:20.04
     name: Build site and create artifact
     steps:
       - name: Install Git
@@ -46,9 +44,7 @@ jobs:
           path: ./public
 
   deploy:
-    runs-on: self-hosted
-    container:
-      image: ubuntu:20.04
+    runs-on: ubuntu:20.04
     name: Deploy to Yandex Object Storage via AWS CLI
     needs: build
     steps:
