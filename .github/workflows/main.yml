@@ -46,13 +46,13 @@ jobs:
           path: ./public
 
       - name: Install curl
-        run: sudo apt-get update && sudo apt-get install -y curl
+        run: apt-get update && apt-get install -y curl
 
       - name: Install AWS CLI ${{ env.AWS_CLI_VERSION }}
         run: |
           curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-${{ env.AWS_CLI_VERSION }}.zip" -o "awscliv2.zip"
           unzip awscliv2.zip
-          sudo ./aws/install
+          ./aws/install
 
       - name: Configure AWS credentials
         env:
