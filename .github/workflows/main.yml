@@ -3,6 +3,7 @@ name: Build and Deploy Hugo Site to Yandex Cloud
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 env:
   HUGO_VERSION: "0.111.3"
