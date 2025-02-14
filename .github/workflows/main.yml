@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  HUGO_VERSION: "0.111.3"
+  HUGO_VERSION: "0.127.0"
   AWS_CLI_VERSION: "2.22.35"
 
 jobs:
