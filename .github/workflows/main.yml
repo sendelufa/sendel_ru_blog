@@ -5,6 +5,11 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+# Добавляем concurrency для всего workflow
+concurrency: 
+  group: build-and-deploy  # Уникальный идентификатор группы
+  cancel-in-progress: true  # Отменяет выполнение текущего workflow, если запущен новый
+
 env:
   HUGO_VERSION: "0.143.1"
   AWS_CLI_VERSION: "2.22.35"
