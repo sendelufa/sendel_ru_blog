@@ -5,7 +5,7 @@ title: Konstantin Shibkov
 theme: hugo-theme-stack
 useRelativeCover: true
 summaryLength: 20
-paginate: 5
+pagination.pagerSize: 5
 TableOfContents: true
 enableRobotsTXT: false
 deployment:

@@ -4,3 +4,5 @@ public/**
 .DS_Store
 .AppleDouble
 .LSOverride
+image_sources/arrays.pxd
+image_sources/cover.pxd
