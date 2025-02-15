@@ -11,8 +11,10 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu:20.04
-    name: Build site and create artifact
+    runs-on: self-hosted
+    container:
+      image: ubuntu:20.04
+    name: Build Hugo pages → artifact
     steps:
       - name: Install Git
         run: apt-get update && apt-get install -y git
@@ -44,7 +46,9 @@ jobs:
           path: ./public
 
   deploy:
-    runs-on: ubuntu:20.04
+    runs-on: self-hosted
+    container:
+      image: ubuntu:20.04
     name: Deploy to Yandex Object Storage via AWS CLI
     needs: build
     steps:
