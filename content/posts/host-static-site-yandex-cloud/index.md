@@ -195,8 +195,10 @@ yc iam service-account list
 ```
 
 Назначаем права доступа для сервисного аккаунта:
-```
-yc <service-name> <resource> add-access-binding <resource-name>|<resource-id> \
+
+```bash
+yc <service-name> <resource> \
+  add-access-binding <resource-name>|<resource-id> \
   --role <role-id> \
   --subject serviceAccount:<service-account-id>
 ```
@@ -204,12 +206,11 @@ yc <service-name> <resource> add-access-binding <resource-name>|<resource-id> \
 Так как я не знаю тонкостей, я хочу, чтобы сервисный
 аккаунт управлял всеми ресурсами облака и использую:
 
-- для <service-name> = `resource-manager`
-- для <resource> = `cloud`
-- для <resource-id> = id моего облако, показывал на скрине или
-можно посмотреть командой `yc config list`
-- для <role-id> = `resource-manager.clouds.owner`
-- для <service-account-id> = ID из таблички списка сервисных
+- **service-name** = `resource-manager`
+- **resource** = `cloud`
+- **resource-id** = ID моего облако, найти через `yc config list`
+- **role-id** = `resource-manager.clouds.owner`
+- **service-account-id** = ID из таблички списка сервисных
 аккаунтов
 
 В итоге получилась такая команда:
