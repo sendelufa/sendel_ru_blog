@@ -5,6 +5,7 @@ description: Универсальные список программ для р�
 author: "Konstantin Shibkov"
 tags: ["applications", "tools", "mac", "windows", "linux"]
 categories: ["lists", "apps"]
+image: cover.webp
 ---
 
 Здесь список приложений, которые использую повседневного и могу
