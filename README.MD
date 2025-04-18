@@ -1,5 +1,7 @@
 # Блог sendel.ru
 
+[![Build and Deploy Hugo Site to Yandex Cloud](https://github.com/sendelufa/sendel_ru_blog/actions/workflows/main.yml/badge.svg)](https://github.com/sendelufa/sendel_ru_blog/actions/workflows/main.yml)
+
 Пишу статьи в markdown, Hugo собирает в статический
 сайт, а читают все вокруг на [sendel.ru](https://sendel.ru)
 
