@@ -19,15 +19,14 @@ jobs:
     runs-on: self-hosted
     container:
       image: ubuntu:20.04
-    name: Build Hugo pages → artifact
+    name: Build Hugo pages → Upload YC Cloud
     steps:
       - name: Install Git
         run: apt-get update && apt-get install -y git
         
       - name: Checkout repository with submodules
         uses: actions/checkout@v4
-        with:
-          submodules: recursive
+        with: { submodules: recursive }
 
       - name: Mark repository as safe
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
@@ -43,26 +42,6 @@ jobs:
 
       - name: Build site
         run: hugo --minify
-
-      - name: Upload build artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: public-folder
-          path: ./public
-          retention-days: 3
-
-  deploy:
-    runs-on: self-hosted
-    container:
-      image: ubuntu:20.04
-    name: Deploy to Yandex Object Storage via AWS CLI
-    needs: build
-    steps:
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: public-folder
-          path: ./public
 
       - name: Install curl
         run: apt-get update && apt-get install -y curl
