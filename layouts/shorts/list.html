@@ -1,0 +1,7 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<div class="post-feed">
+    {{ range .RegularPagesRecursive }} {{ partial
+    "partials/article-list/default.html" . }} {{ end }}
+</div>
+{{ end }}
