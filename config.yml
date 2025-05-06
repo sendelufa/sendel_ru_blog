@@ -11,10 +11,10 @@ enableRobotsTXT: false
 deployment:
   matchers:
     - pattern: ^.+\.(js|css|svg|ttf)$
-      cacheControl: 'max-age=18144000, no-transform, public'
+      cacheControl: "max-age=18144000, no-transform, public"
       gzip: true
     - pattern: ^.+\.(png|jpg|woff2)$
-      cacheControl: 'max-age=31536000, no-transform, public'
+      cacheControl: "max-age=31536000, no-transform, public"
       gzip: false
     - pattern: ^.+\.(html|xml|json)$
       gzip: true
@@ -31,15 +31,17 @@ params:
     name: Konstantin Shibkov
     email: sendel@sendel.ru
   defaultTheme: dark
+  dateFormat:
+    published: 02 January 2006
   showReadingTime: false
   toc: true
   author: Shibkov Konstantin
-  description: 'Статьи о java и linux, руководства и мануалы'
-  lastModDisplay: '[your display text]'
+  description: "Статьи о java и linux, руководства и мануалы"
+  lastModDisplay: "[your display text]"
   mainSections:
     - posts
   sidebar:
-    compact: true
+    compact: false
     avatar:
       enabled: true
       local: true
@@ -47,21 +49,24 @@ params:
   widgets:
     page:
       - type: toc
+    homepage:
+      - type: tag-cloud
+        limit: 10
   imageProcessing:
-      cover:
-        enabled: true
-      content:
-        enabled: false
-  
+    cover:
+      enabled: true
+    content:
+      enabled: false
+
 taxonomies:
   tag: tags
 languages:
   ru:
     params:
-      title: Konstantin Shibkov - блог
-      subtitle: 'Статьи о java и linux, руководства и мануалы'
-      keywords: 'java, js, php, linux, manjaro, shibkov, spring'
-      copyright: ''
+      title: Константин Шибков - блог
+      subtitle: "Статьи о java и linux, руководства и мануалы"
+      keywords: "java, js, php, linux, manjaro, shibkov, spring"
+      copyright: ""
       menuMore: Показать еще
       writtenBy: Автор
       readMore: Читать
@@ -76,14 +81,20 @@ languages:
         logoHomeLink: /
     menu:
       main:
+        - identifier: posts
+          name: Статьи
+          url: /
+          weight: -100
+          params:
+            - icon: news
         - identifier: about
           name: Обо мне
           url: /about
-          weight: -100
+          weight: 200
           params:
-            - icon: about
+            - icon: user
         - identifier: shorts
-          name: Shorts
+          name: Заметки
           url: /shorts
           weight: 100
           params:
